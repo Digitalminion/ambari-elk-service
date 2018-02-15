@@ -27,8 +27,7 @@ class KibanaMaster(Script):
     env.set_params(params)
     self.install_packages(env)
     reload(sys)                         
-    sys.setdefaultencoding('utf-8') 
-    )
+    sys.setdefaultencoding('utf-8')
     
   def configure(self, env):
     import params
