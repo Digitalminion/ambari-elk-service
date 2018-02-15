@@ -19,8 +19,6 @@ WorkingDirectory=/usr/share/elasticsearch
 User={{elastic_user}}
 Group={{elastic_user_group}}
 
-ExecStartPre=/usr/share/elasticsearch/bin/elasticsearch-systemd-pre-exec
-
 ExecStart=/usr/share/elasticsearch/bin/elasticsearch \
                                                 -Des.pidfile=${PID_DIR}/elasticsearch.pid \
                                                 -Des.default.path.home=${ES_HOME} \
