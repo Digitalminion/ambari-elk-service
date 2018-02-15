@@ -1,6 +1,6 @@
 server.port: {{kibana_port}}
 
-elasticsearch.url: "http://localhost:{{elastic_port}}"
+elasticsearch.url: "http://{{elastic_master_name}}:{{elastic_port}}"
 
 kibana.index: {{kinana_index}}
 
