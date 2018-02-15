@@ -19,12 +19,7 @@ WorkingDirectory=/usr/share/elasticsearch
 User={{elastic_user}}
 Group={{elastic_user_group}}
 
-ExecStart=/usr/share/elasticsearch/bin/elasticsearch \
-                                                -Des.pidfile=${PID_DIR}/elasticsearch.pid \
-                                                -Des.default.path.home=${ES_HOME} \
-                                                -Des.default.path.logs=${LOG_DIR} \
-                                                -Des.default.path.data=${DATA_DIR} \
-                                                -Des.default.path.conf=${CONF_DIR}
+ExecStart=/usr/share/elasticsearch/bin/elasticsearch -p ${PID_DIR}/elasticsearch.pid --quiet
 
 
 # StandardOutput is configured to redirect to journalctl since
