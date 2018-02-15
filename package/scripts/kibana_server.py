@@ -27,12 +27,7 @@ class KibanaMaster(Script):
     env.set_params(params)
     self.install_packages(env)
     reload(sys)                         
-    sys.setdefaultencoding('utf-8')  
-    File(format("{kibana_home}/optimize/bundles/src/ui/public/images/kibana.svg"),
-         content=Template(format("kibana.svg")),
-         owner=params.kibana_user,
-         group=params.kibana_user_group,
-         mode=0644
+    sys.setdefaultencoding('utf-8') 
     )
     
   def configure(self, env):

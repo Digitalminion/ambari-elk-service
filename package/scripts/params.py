@@ -27,8 +27,8 @@ config = Script.get_config()
 
 logstash_user = config['configurations']['logstash-env']['logstash_user']
 logstash_user_group = config['configurations']['logstash-env']['logstash_user_group']
-elastic_user = config['configurations']['elastic-env']['elastic_user']
-elastic_user_group = config['configurations']['elastic-env']['elastic_user_group']
+elastic_user = config['configurations']['elasticsearch-env']['elastic_user']
+elastic_user_group = config['configurations']['elasticsearch-env']['elastic_user_group']
 kibana_user = config['configurations']['kibana-env']['kibana_user']
 kibana_user_group = config['configurations']['kibana-env']['kibana_user_group']
 
