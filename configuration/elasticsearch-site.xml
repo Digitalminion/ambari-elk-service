@@ -22,7 +22,7 @@
 
 <configuration supports_final="true">
     <property>
-    <name>elasticsearch_hostname</name>
+    <name>master.hostname</name>
     <display-name>Elasticsearch Master Hostname</display-name>
     <value>localhost</value>
     <description>User to run Kibana service</description>

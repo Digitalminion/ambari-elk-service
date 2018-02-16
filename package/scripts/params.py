@@ -108,7 +108,7 @@ if 'yarn-site' in config['configurations'] and 'yarn.resourcemanager.webapp.addr
 hostname = config['hostname']
 java64_home = config['hostLevelParams']['java_home']
 
-elastic_master_name = config['configurations']['elasticsearch-site']['elasticsearch_hostname']
+elastic_master_name = config['configurations']['elasticsearch-site']['master.hostname']
 elastic_cluster_name = config['configurations']['elasticsearch-site']['cluster.name']
 elastic_port = config['configurations']['elasticsearch-site']['http.port']
 
